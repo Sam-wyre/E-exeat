@@ -1,0 +1,86 @@
+.topnav{
+	background-color: #2B2B2D;
+	overflow: hidden;
+	margin: 12px;
+	display: flex;
+	justify-content: center;
+	border-radius: 8px;
+    padding: 8px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #e7e7e7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+.home{
+    border-radius: 4px;
+}
+
+.topnav a:hover {
+    background-color: #008CBA;
+    color: black;
+    text-decoration: none;
+}
+
+.topnav a.active {
+    background-color: #008CBA;
+    color: white;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.drop{
+	overflow: hidden;
+}
+
+.drop .btn{
+    text-decoration: none;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: #e7e7e7;
+	padding: 14px 14px;
+	background-color: inherit;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+.topnav a:hover, .drop:hover .btn{
+	background-color: #008CBA;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.content{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 20px 0px rgba(0,0,0,2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.content a{
+	float: none;
+	color: black;
+	padding: 12px 20px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+/* Changes color of dropdown links on hover */
+.content a:hover{
+	background-color: gainsboro;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.drop:hover .content{
+	display: block;
+}

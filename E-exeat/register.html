@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>E-Exeat Registration Form</title>
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/navstyle.css">
+    <link rel="stylesheet" href="../css/form.css">
+	<meta charset = "utf-8">
+	<meta name="author" content="Daramola Funto">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header>
+		<h1>Caleb University E-Exeat Platform</h1>
+	</header>
+    
+    <div class="container">
+	<div class=topnav>
+<!-- Start navigation bar -->
+		<a href="index.html" class="home">Home</a>
+		<div class=drop>
+			<button class="btn">Profile</button>
+			<div class="content">
+				<a href="register.html">Register</a>
+				<a href="update.html">Update</a>
+				<a href="#">Exit</a>
+			</div>
+		</div>
+        
+		<div class=drop>
+			<button class="btn">E-Exeat</button>
+			<div class="content">
+				<a href="short_exeat.html">Short Exeat</a>
+				<a href="long_exeat.html">Long Exeat</a>
+				<a href="emergency.html">Emergency Exeat</a>
+				<a href="progress.html">Progress</a>
+			</div>
+		</div>
+<!-- End of navigation bar -->
+	</div>
+        
+ <!-- Start registration form --> 
+		<form class="register" name="register" action ="register.php" method="post" autocomplete="on">
+            <h2>Exeat Registration Form</h2><hr>
+			<label for="pic">Upload a Profile Picture</label><br>
+				<center><input id="pic" name="pic" type="file"><br><br></center>
+		
+			<label for="matricno">Matriculation Number</label><br>
+				<input id="matricno" type="text" name ="matricno" required><br><br>
+				
+			<label for="fname">First Name</label><br> 
+				<input id = "fname" type="text" name ="fname" required><br><br>
+				
+			<label for="lname">Last Name</label><br> 
+				<input id = "lname" type="text" name ="lname" required><br><br>
+				
+			<label for="tel">Mobile Number</label><br>
+				<input id = "tel" type = "tel" name = "tel" size="15" maxlength="15" required><br><br>
+				
+			<label for = "hostel">Hostel</label><br>
+				<select id= "hostel" name= "hostel" required>
+					<option value="Old Male">OLD MALE HOSTEL</option>
+					<option value="New Male">NEW MALE HOSTEL</option>
+					<option value="Old Female">OLD FEMALE HOSTEL</option>
+					<option value="New Female">NEW FEMALE HOSTEL</option>
+				</select><br><br>
+				
+			<label for="roomno">Room Number</label><br>     
+				<input id = "roomno" type="number" name="roomno" min="1" max="200" required><br><br>
+				
+				<input type="submit" class="submit" value="Submit Request">
+		</form>
+<!-- End registration form-->	
+    </div>
+    
+	<footer>
+		<img src="img/logo_footer.png" alt="Caleb Image" id="footimg"><br>
+		<i>&copy; All Rights Reseverd</i>
+	</footer>
+</body>
+</html>

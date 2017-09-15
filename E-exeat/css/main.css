@@ -1,0 +1,40 @@
+header{
+	background-color: rgba(9,68,108,1);
+	text-align : center;
+    padding: 12px 20px;
+	color: #CCC;
+	border-radius: 4px;
+}
+
+body{
+    background: url(../img/building-2.png);
+    height: 100%;
+	background-attachment:fixed;
+	background-repeat:repeat-x;
+/*    z-index: 100;*/
+}
+
+section{
+    margin: 10px;
+    text-align: center;
+    padding: 12px 20px;
+	border: 1px solid #008CBA;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+
+h3{
+    background-color: #008CBA;
+    padding: 20px;
+}
+
+footer{
+	background-color: rgba(9,68,108,1);
+	padding: 12px 20px;
+	color: #CCC;
+	border-radius: 4px;
+}
+
+#footimg{
+	width: 200px;
+}
